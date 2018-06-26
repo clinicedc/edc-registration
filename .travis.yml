@@ -10,9 +10,6 @@ branches:
   only:
   - develop
 
-env:
-  - DJANGO_VERSION=1.11.2
-
 services:
   - mysql
 
