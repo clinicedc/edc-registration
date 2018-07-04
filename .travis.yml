@@ -19,10 +19,8 @@ addons:
 
 install:
   - pip3 install --upgrade pip setuptools
-  - pip3 install -q Django==$DJANGO_VERSION
   - pip3 install flake8
   - pip3 install coveralls
-  - pip3 install mysqlclient
   - pip3 install -q -r requirements.txt
 
 before_script:
