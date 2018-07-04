@@ -1,3 +1,4 @@
+.
 git+https://github.com/clinicedc/edc-base@develop#egg=edc-base
 git+https://github.com/clinicedc/edc-device@develop#egg=edc-device
 git+https://github.com/clinicedc/edc-constants@develop#egg=edc-constants
@@ -6,3 +7,4 @@ git+https://github.com/clinicedc/edc-identifier@develop#egg=edc-identifier
 git+https://github.com/erikvw/django-crypto-fields@develop#egg=django_crypto_fields
 git+https://github.com/erikvw/django-revision@develop#egg=django_revision
 git+https://github.com/clinicedc/edc-model-fields@develop#egg=edc-model-fields
+git+https://github.com/clinicedc/edc-model-admin@develop#egg=edc-model-admin
