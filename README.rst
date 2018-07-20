@@ -35,7 +35,8 @@ For example, a model, ``SubjectEligibility`` or a screening model creates or upd
 
 .. code-block:: python
 
-	class SubjectEligibility(UniqueSubjectIdentifierModelMixin, UpdatesOrCreatesRegistrationModelMixin, BaseUuidModel):
+	class SubjectEligibility(UniqueSubjectIdentifierModelMixin,
+                             UpdatesOrCreatesRegistrationModelMixin, BaseUuidModel):
 
     screening_identifier = models.CharField(
         max_length=36,
@@ -54,9 +55,10 @@ For example, a model, ``SubjectEligibility`` or a screening model creates or upd
             self.subject_identifier_aka = self.subject_identifier_as_pk.hex
         return self.subject_identifier
 
-    class SubjectConsent(ConsentModelMixin, UpdatesOrCreatesRegistrationModelMixin, CreateAppointmentsMixin,
-                         IdentityFieldsMixin, ReviewFieldsMixin, PersonalFieldsMixin,
-                         CitizenFieldsMixin, VulnerabilityFieldsMixin, BaseUuidModel):
+    class SubjectConsent(ConsentModelMixin, UpdatesOrCreatesRegistrationModelMixin,
+                         CreateAppointmentsMixin, IdentityFieldsMixin, ReviewFieldsMixin,
+                         PersonalFieldsMixin, CitizenFieldsMixin, VulnerabilityFieldsMixin,
+                         BaseUuidModel):
                          
 		@property
 	    def registration_unique_field(self):
