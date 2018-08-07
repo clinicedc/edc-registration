@@ -26,6 +26,11 @@ setup(
     long_description=README,
     zip_safe=False,
     keywords='django edc registration',
+    install_requires=[
+        'edc-base',
+        'edc-identifier',
+        'edc_model_admin',
+    ],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
