@@ -1,4 +1,4 @@
-|pypi| |travis| |coverage|
+|pypi| |travis| |codecov|
 
 edc-registration
 ----------------
@@ -70,5 +70,6 @@ A subject's ``RegisteredSubject`` instance is created and updated in a ``post_sa
 .. |travis| image:: https://travis-ci.org/clinicedc/edc-registration.svg?branch=develop
     :target: https://travis-ci.org/clinicedc/edc-registration
     
-.. |coverage| image:: https://coveralls.io/repos/github/clinicedc/edc-registration/badge.svg?branch=develop
-    :target: https://coveralls.io/github/clinicedc/edc-registration?branch=develop
+.. |codecov| image:: https://codecov.io/gh/clinicedc/edc-registration/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/clinicedc/edc-registration
+  
