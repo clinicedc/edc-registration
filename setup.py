@@ -34,7 +34,7 @@ setup(
     install_requires=[
         'edc-base',
         'edc-identifier',
-        'edc_model_admin',
+        'edc-model-admin',
     ],
     classifiers=[
         'Environment :: Web Environment',
