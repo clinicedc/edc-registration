@@ -1,4 +1,4 @@
-|pypi| |travis| |codecov|
+|pypi| |travis| |codecov| |downloads|
 
 edc-registration
 ----------------
@@ -72,4 +72,7 @@ A subject's ``RegisteredSubject`` instance is created and updated in a ``post_sa
     
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc-registration/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc-registration
-  
+
+.. |downloads| image:: https://pepy.tech/badge/edc-registration
+   :target: https://pepy.tech/project/edc-registration
+ 
