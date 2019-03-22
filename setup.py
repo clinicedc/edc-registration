@@ -10,7 +10,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 with open(os.path.join(os.path.dirname(__file__), 'VERSION')) as f:
     VERSION = f.read()
 
-tests_require = ['edc-device']
+tests_require = ['edc-device', "edc-test-utils"]
 with open(join(dirname(abspath(__file__)), 'requirements.txt')) as f:
     for line in f:
         tests_require.append(line.strip())
