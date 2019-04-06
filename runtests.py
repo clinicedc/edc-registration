@@ -29,12 +29,14 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "django_revision.apps.AppConfig",
         "edc_base.apps.AppConfig",
         "edc_device.apps.AppConfig",
+        "edc_dashboard.apps.AppConfig",
         "edc_identifier.apps.AppConfig",
         "edc_registration.apps.EdcProtocolAppConfig",
         "edc_registration.apps.AppConfig",
     ],
     RANDOMIZATION_LIST_PATH=join(
         base_dir, app_name, "tests", "test_randomization_list.csv"),
+    add_dashboard_middleware=True,
 ).settings
 
 
