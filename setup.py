@@ -32,7 +32,6 @@ setup(
     zip_safe=False,
     keywords='django edc registration',
     install_requires=[
-        'edc-base',
         'edc-identifier',
         'edc-model-admin',
     ],
