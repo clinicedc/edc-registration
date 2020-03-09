@@ -67,9 +67,9 @@ A subject's ``RegisteredSubject`` instance is created and updated in a ``post_sa
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-registration.svg
     :target: https://pypi.python.org/pypi/edc-registration
     
-.. |travis| image:: https://travis-ci.org/clinicedc/edc-registration.svg?branch=develop
-    :target: https://travis-ci.org/clinicedc/edc-registration
-    
+.. |travis| image:: https://travis-ci.com/clinicedc/edc-registration.svg?branch=develop
+    :target: https://travis-ci.com/clinicedc/edc-registration
+
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc-registration/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc-registration
 
