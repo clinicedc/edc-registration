@@ -10,7 +10,7 @@ from os.path import abspath, dirname, join
 
 
 base_dir = dirname(abspath(__file__))
-app_name = 'edc_registration'
+app_name = "edc_registration"
 
 DEFAULT_SETTINGS = DefaultTestSettings(
     calling_file=__file__,
@@ -27,6 +27,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "django.contrib.sites",
         "django_crypto_fields.apps.AppConfig",
         "django_revision.apps.AppConfig",
+        "multisite",
         "edc_device.apps.AppConfig",
         "edc_dashboard.apps.AppConfig",
         "edc_identifier.apps.AppConfig",
@@ -35,7 +36,8 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "edc_registration.apps.AppConfig",
     ],
     RANDOMIZATION_LIST_PATH=join(
-        base_dir, app_name, "tests", "test_randomization_list.csv"),
+        base_dir, app_name, "tests", "test_randomization_list.csv"
+    ),
     add_dashboard_middleware=True,
 ).settings
 
@@ -44,9 +46,10 @@ def main():
     if not settings.configured:
         settings.configure(**DEFAULT_SETTINGS)
     django.setup()
-    tags = [t.split('=')[1] for t in sys.argv if t.startswith('--tag')]
+    tags = [t.split("=")[1] for t in sys.argv if t.startswith("--tag")]
     failures = DiscoverRunner(failfast=False, tags=tags).run_tests(
-        [f'{app_name}.tests'])
+        [f"{app_name}.tests"]
+    )
     sys.exit(failures)
 
 
