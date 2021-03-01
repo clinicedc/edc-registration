@@ -1,4 +1,4 @@
-|pypi| |travis| |codecov| |downloads|
+|pypi| |actions| |codecov| |downloads|
 
 edc-registration
 ----------------
@@ -50,14 +50,14 @@ For example, a model, ``SubjectEligibility`` or a screening model creates or upd
         CreateAppointmentsMixin, IdentityFieldsMixin, ReviewFieldsMixin,
         PersonalFieldsMixin, CitizenFieldsMixin, VulnerabilityFieldsMixin,
         BaseUuidModel):
-                         
+
 		@property
 	    def registration_unique_field(self):
 	        return 'screening_identifier'
 
 	    class Meta:
 	        app_label = 'my_app'
-    
+
 
 The property ``registration_unique_field`` returns a model attribute that is used to set a registration identifier on ``RegisteredSubject``.
 
@@ -66,13 +66,12 @@ A subject's ``RegisteredSubject`` instance is created and updated in a ``post_sa
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-registration.svg
     :target: https://pypi.python.org/pypi/edc-registration
-    
-.. |travis| image:: https://travis-ci.com/clinicedc/edc-registration.svg?branch=develop
-    :target: https://travis-ci.com/clinicedc/edc-registration
+
+.. |actions| image:: https://github.com/clinicedc/edc-registration/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/clinicedc/edc-registration/actions?query=workflow:build
 
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc-registration/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc-registration
 
 .. |downloads| image:: https://pepy.tech/badge/edc-registration
    :target: https://pepy.tech/project/edc-registration
- 
