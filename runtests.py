@@ -27,9 +27,11 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "django_crypto_fields.apps.AppConfig",
         "django_revision.apps.AppConfig",
         "multisite",
+        "edc_appointment.apps.AppConfig",
         "edc_device.apps.AppConfig",
         "edc_dashboard.apps.AppConfig",
         "edc_identifier.apps.AppConfig",
+        "edc_metadata.apps.AppConfig",
         "edc_sites.apps.AppConfig",
         "edc_registration.apps.EdcProtocolAppConfig",
         "edc_registration.apps.AppConfig",
@@ -44,7 +46,8 @@ def main():
         settings.configure(**DEFAULT_SETTINGS)
     django.setup()
     tags = [t.split("=")[1] for t in sys.argv if t.startswith("--tag")]
-    failures = DiscoverRunner(failfast=False, tags=tags).run_tests([f"{app_name}.tests"])
+    failfast = any([True for t in sys.argv if t.startswith("--failfast")])
+    failures = DiscoverRunner(failfast=failfast, tags=tags).run_tests([f"{app_name}.tests"])
     sys.exit(failures)
 
 
