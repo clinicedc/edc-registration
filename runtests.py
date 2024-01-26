@@ -33,6 +33,7 @@ project_settings = DefaultTestSettings(
         "edc_notification.apps.AppConfig",
         "edc_sites.apps.AppConfig",
         "edc_visit_schedule.apps.AppConfig",
+        "visit_schedule_app.apps.AppConfig",
         "edc_visit_tracking.apps.AppConfig",
         "edc_registration.apps.AppConfig",
     ],
